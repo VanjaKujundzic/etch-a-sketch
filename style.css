@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+.wrapper {
+   
+}
+#box {
+    display: flex; 
+    flex-wrap: wrap;
+    border: 5px solid black ;
+    height: 200px;
+    width: 200px;
+
+    
+    
+}
+#box > * {
+    padding: 0px;
+    margin: 0px;
+    
+}
+.square {
+    border: 0.5px solid black;
+    
+
+}
