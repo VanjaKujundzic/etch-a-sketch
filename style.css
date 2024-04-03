@@ -10,8 +10,8 @@
     display: flex; 
     flex-wrap: wrap;
     border: 5px solid black ;
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 400px;
 
     
     
@@ -22,7 +22,7 @@
     
 }
 .square {
-    border: 0.5px solid black;
+    border: 0.5px solid rgb(0, 0, 0);
     
 
 }
