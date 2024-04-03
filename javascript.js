@@ -2,10 +2,10 @@ const divBox= document.querySelector("#box");
 const wrapper= document.querySelector(".wrapper")
 
 //Defining the starting grid size
-let gridSize=prompt("how many squares?");
-if (gridSize>100){
-    alert("It has to be less than 100")
-    gridSize=prompt("how many squares?");
+let gridSize=prompt("How many squares?");
+while(gridSize>100){
+    alert("it has to be less than 100");
+    gridSize=prompt("How many squares?");
 }
 
 
@@ -14,10 +14,14 @@ let resetBtn= document.createElement("button");
  resetBtn.textContent="Reset";
  wrapper.append(resetBtn);
  resetBtn.addEventListener("click", () => {
-     gridSize=prompt("How many squares in the grid?");
+     gridSize=prompt("How many squares in the grid would you like?");
      if (gridSize>100){
         alert("It has to be less than 100")
         gridSize=prompt("how many squares?");
+        while(gridSize>100){
+            alert("it has to be less than 100");
+            gridSize=prompt("How many squares?");
+        }
     }
      resetGame();
      GridLayout();
