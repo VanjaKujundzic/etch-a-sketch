@@ -21,16 +21,16 @@ function GridLayout(){
             
         }   
  }
-
+//creating the hover effect for the grid box that increases the opacity with each mouse hover
 let currentOpacity=0.1;
 function hoverEffect(){
 let squares=document.querySelectorAll(".square")
 squares.forEach(square => {
-    square.dataset.opacity= 0.2; //adds a starting value of each square
+    square.dataset.opacity= 0.1; //adds a starting value for each square opacity
 
     square.addEventListener("mouseover", () => {
     currentOpacity= parseFloat(square.dataset.opacity)+0.3; //each square when the mouse moves adds 0.3 opacity to the current value
-
+    console.log(currentOpacity);
     if(currentOpacity>1){  
         currentOpacity=1;
     }
