@@ -41,7 +41,8 @@ function GridLayout(){
                 square.classList.add("square")
                 // square.style.setProperty("flex","1 0 0")
                 divBox.append(square);
-                square.style.width= `calc(${100/gridSize-0.398}%)` //calculates the width of the square to make them fit inside the box  
+                square.style.width= `calc(${100/gridSize-0.5}%)` //calculates the width of the square to make them fit inside the box 
+                square.style.height= square.style.width;
             }
   
         }   
